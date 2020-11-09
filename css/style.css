@@ -1,0 +1,81 @@
+/* reset */
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font: 1.6rem sans-serif;
+  margin: 0;
+}
+h1, h2, h3, h4, h5, h6,
+p, figure {
+  margin: 0;
+  padding: 0;
+  font-weight: lighter;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+/* theme */
+:root {
+  --color-primary: #ef4e33;
+  --color-secondary: #3598db;
+  --color-background: rgba(253, 251, 251, 0.8);
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-image: url('../asset/fond.png');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+main {
+  width: 80rem;
+  margin: auto auto;
+  padding: 0 1rem;
+  box-shadow: 0 0 10px #000;
+  background: var(--color-background);
+}
+h1, h2 {
+  font-family: 'Zhi Mang Xing', cursive;
+}
+h1 {
+  text-align: center;
+  font-size: 4rem;
+  padding: 3rem 0;
+}
+h1::before {
+  content: "\002605";
+  color: var(--color-primary);
+  margin-right: 1rem;
+}
+ol {
+  margin: 2rem 0;
+}
+h2 {
+  color: #fff;
+  font-size: 2.4rem;
+  background-color: var(--color-secondary);
+  text-transform: capitalize;
+  padding: 1rem 1.5rem;
+  position: sticky;
+  top: 0;
+}
+section:target h2 {
+  background-color: var(--color-primary);
+}
+h2::after {
+  content: "\00003E";
+  color: #fff;
+  margin-left: 1rem;
+}
+p {
+  text-align: justify;
+  margin: 2rem 0;
+}
+figure, img {
+  width: 100%;
+  margin-bottom: 2rem;
+} 
